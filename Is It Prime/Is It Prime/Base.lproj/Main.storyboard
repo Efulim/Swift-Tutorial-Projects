@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Is_It_Prime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is It Prime?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjy-Kt-ehd">
+                                <rect key="frame" x="129" y="28" width="117" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a positive whole number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3y-YH-oQS">
+                                <rect key="frame" x="72" y="65" width="231" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E.g. 4, 8 or 29" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xvg-xX-3ij">
+                                <rect key="frame" x="16" y="98" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKy-nC-O0S">
+                                <rect key="frame" x="153.5" y="168" width="68" height="30"/>
+                                <state key="normal" title="Is It Prime"/>
+                                <connections>
+                                    <action selector="checkPrime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DIC-BN-uTJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNP-3w-BoO">
+                                <rect key="frame" x="16" y="206" width="343" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="150-4V-rRi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gKy-nC-O0S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3H6-W7-0Lm"/>
+                            <constraint firstItem="dNP-3w-BoO" firstAttribute="top" secondItem="gKy-nC-O0S" secondAttribute="bottom" constant="8" id="Abb-at-3TA"/>
+                            <constraint firstItem="I3y-YH-oQS" firstAttribute="top" secondItem="xjy-Kt-ehd" secondAttribute="bottom" constant="8" id="HZt-Ub-hub"/>
+                            <constraint firstItem="dNP-3w-BoO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OLC-Dt-X4j"/>
+                            <constraint firstItem="xvg-xX-3ij" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ok3-SP-aNX"/>
+                            <constraint firstItem="xvg-xX-3ij" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="PNB-Mg-CK8"/>
+                            <constraint firstItem="gKy-nC-O0S" firstAttribute="top" secondItem="xvg-xX-3ij" secondAttribute="bottom" constant="40" id="PkQ-VK-xZ4"/>
+                            <constraint firstItem="I3y-YH-oQS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fpr-DU-XCu"/>
+                            <constraint firstItem="xjy-Kt-ehd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="gKK-K5-Gvu"/>
+                            <constraint firstItem="xvg-xX-3ij" firstAttribute="top" secondItem="I3y-YH-oQS" secondAttribute="bottom" constant="12" id="lkV-Xd-GUH"/>
+                            <constraint firstItem="xjy-Kt-ehd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uP1-SY-50P"/>
+                            <constraint firstItem="dNP-3w-BoO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xQg-tG-xwe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="result" destination="dNP-3w-BoO" id="gjX-O0-Ktm"/>
+                        <outlet property="source" destination="xvg-xX-3ij" id="86N-jf-MO4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-207.19999999999999" y="154.27286356821591"/>
+        </scene>
+    </scenes>
+</document>
